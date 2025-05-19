@@ -45,7 +45,8 @@ Simulated Drone Data
 
 ### Input
 - Video
-```
+
+---
 
 ### Output Examples
 - ✅ **Log**: "Blue Ford F150 spotted at gate, 12:00."
