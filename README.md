@@ -133,9 +133,7 @@ streamlit run app.py
 
 ## 📝 Improvements (Planned)
 
-- Incorporate real drone telemetry and live video stream.
-- Support multiple drone feeds and geo-mapping integration.
-- Add timeline navigation for past logs.
+- Follow up question answering.
 
 ---
 
