@@ -17,7 +17,7 @@ A functional prototype of an intelligent agent that monitors fixed property usin
 
 | Component            | Tool/Library                        | Purpose                                         |
 |----------------------|-------------------------------------|-------------------------------------------------|
-| 🧠 Object Detection   | [YOLOv11s](https://github.com/ultralytics/yolov5) | Real-time object detection and tracking        |
+| 🧠 Object Detection   | [YOLOv11s](https://docs.ultralytics.com/tasks/detect/) | Real-time object detection and tracking        |
 | 🧾 Log Generation     | OpenAI GPT-4 / Gemini Pro Vision     | Convert tracked data into human-readable logs and alerts |
 | 🔎 Semantic Search    | [ChromaDB](https://www.trychroma.com/), [LangChain](https://www.langchain.com/), [all-MiniLM-L6-v2](https://www.sbert.net/) | Vector DB & contextual search |
 | 🧰 Frameworks         | Python, OpenCV, Streamlit           | Frontend & backend integration                  |
