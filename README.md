@@ -33,7 +33,8 @@ Simulated Drone Data
     ├──> LLM Log Formatter
     ├──> Alert Engine
     ├──> ChromaDB + Sentence Transformers (Embeddings)
-    └──> LangChain + RetrievalQA → User Interface
+    └──> LangChain + RetrievalQA 
+    └──> Question Answering
 ```
 
 ---
@@ -58,19 +59,14 @@ frames = [
 ## 📁 Folder Structure
 
 ```
-├── Agents/
-│   └── AgentBase.py
 ├── tools/
-│   └── GeminiTool.py
+│   └── GeminiApiTool.py
 ├── utils/
 │   ├── utils.py
-│   ├── utils_traceablity.py
-│   └── utils_agent.py
 ├── my_agent.py
-├── app.py
+├── run.py
 ├── README.md
 ├── requirements.txt
-└── tests/
 ```
 
 ---
@@ -83,10 +79,10 @@ frames = [
 pip install -r requirements.txt
 ```
 
-### 2. Run Streamlit UI
+### 2. Run python file
 
 ```bash
-streamlit run app.py
+python run.py
 ```
 
 ---
@@ -95,23 +91,15 @@ streamlit run app.py
 
 ```bash
 export GOOGLE_API_KEY="your_google_api_key"
-export OPENAI_API_KEY="your_openai_key"
 ```
 
 ---
-
-## 🧪 Testing
-
-```bash
-pytest tests/
-```
 
 ---
 
 ## 📌 Improvements
 
-- Add video summarization
-- Natural language Q&A from logs
+- Answer follow-up questions
 - Real-time drone integration (e.g., MQTT, ROS)
 
 ---
