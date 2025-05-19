@@ -90,7 +90,7 @@ python run.py
 ## 🔐 Setup Environment Variables
 
 ```bash
-export GOOGLE_API_KEY="your_google_api_key"
+export GEMINI_API_KEY="your_google_api_key"
 ```
 
 ---
