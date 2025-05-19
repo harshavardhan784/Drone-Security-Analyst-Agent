@@ -1,3 +1,4 @@
+
 # 🚨 Drone Security Analyst Agent
 
 A functional prototype of an intelligent agent that monitors fixed property using a docked drone. It simulates real-time video and telemetry analysis to detect suspicious events, generate alerts, and provide contextual insights through AI-based querying and summarization.
@@ -10,6 +11,7 @@ A functional prototype of an intelligent agent that monitors fixed property usin
 - **Real-Time Alerting**: Triggers alerts based on predefined rules (e.g., loitering near main gate at night).
 - **Semantic Log Querying**: Uses vector-based retrieval ([ChromaDB](https://www.trychroma.com/) + [LangChain](https://www.langchain.com/)) and [Sentence Transformers](https://www.sbert.net/) for intelligent querying over event logs.
 - **AI-Driven Analysis**: LLM generates human-readable summaries and insights based on raw tracking data.
+- **Streamlit UI**: Web-based interactive interface for log display, alert monitoring, and AI-assisted queries.
 
 ---
 
@@ -34,7 +36,7 @@ Simulated Drone Data
     ├──> Alert Engine
     ├──> ChromaDB + Sentence Transformers (Embeddings)
     └──> LangChain + RetrievalQA 
-    └──> Question Answering
+        └──> Question Answering
 ```
 
 ---
@@ -65,6 +67,7 @@ frames = [
 │   ├── utils.py
 ├── my_agent.py
 ├── run.py
+├── streamlit_ui.py
 ├── README.md
 ├── requirements.txt
 ```
@@ -73,34 +76,62 @@ frames = [
 
 ## 🚀 Getting Started
 
-### 1. Install Requirements
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/drone-security-agent.git
+cd drone-security-agent
+```
+
+### 2. Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run python file
-
-```bash
-python run.py
-```
-
----
-
-## 🔐 Setup Environment Variables
+### 3. Set Environment Variables
 
 ```bash
 export GEMINI_API_KEY="your_google_api_key"
 ```
 
----
+Or create a `.env` file and add:
+```
+GEMINI_API_KEY=your_google_api_key
+```
+
+### 4. Run the Streamlit App
+
+Make sure to update `video_path` and sample queries in `run.py` or `streamlit_ui.py` before launching:
+
+```bash
+streamlit run streamlit_ui.py
+```
 
 ---
 
-## 📌 Improvements
+## 🧠 Design Decisions
 
-- Answer follow-up questions
-- Real-time drone integration (e.g., MQTT, ROS)
+- **LLM Integration**: GPT/Gemini powers summarization and querying, enabling rich semantic understanding.
+- **Modular Tools**: Tools are separated in `tools/` and `utils/` to maintain clean architecture.
+- **Vector Search**: Semantic search enhances user interaction by allowing natural language queries on past events.
+- **Streamlit UI**: Offers a quick, lightweight interface for demonstrations and operator interactions.
+
+---
+
+## ✅ Benefits of the Pipeline
+
+- High scalability for adding new alert rules or detection models.
+- Easy to adapt from simulated to real drone telemetry feeds.
+- Fast debugging and prototyping through modular design.
+
+---
+
+## 📝 Improvements (Planned)
+
+- Incorporate real drone telemetry and live video stream.
+- Support multiple drone feeds and geo-mapping integration.
+- Add timeline navigation for past logs.
 
 ---
 
