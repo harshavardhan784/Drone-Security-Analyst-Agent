@@ -57,7 +57,7 @@ Simulated Drone Data
 
 ## 📁 Folder Structure
 
-```
+```plaintext
 ├── tools/
 │   └── GeminiApiTool.py
 ├── utils/
@@ -67,7 +67,6 @@ Simulated Drone Data
 ├── streamlit_ui.py
 ├── README.md
 ├── requirements.txt
-```
 
 ---
 
