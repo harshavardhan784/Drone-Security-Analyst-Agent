@@ -76,8 +76,8 @@ Simulated Drone Data
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/drone-security-agent.git
-cd drone-security-agent
+git clone https://github.com/your-username/Drone-Security-Analyst-Agent.git
+cd Drone-Security-Analyst-Agent
 ```
 
 ### 2. Install Requirements
