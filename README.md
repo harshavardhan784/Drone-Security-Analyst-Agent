@@ -3,6 +3,12 @@
 
 A functional prototype of an intelligent agent that monitors fixed property using a docked drone. It simulates real-time video and telemetry analysis to detect suspicious events, generate alerts, and provide contextual insights through AI-based querying and summarization.
 
+# Demo
+
+[Workflow](https://www.loom.com/share/50fc0ffcf4ef47c29f42702ecf86fd18?sid=89d0494c-9e05-4840-aa39-1eb549c0d77f)
+[UI Based Execution](https://www.loom.com/share/68f463bc75ee47a782aa33046340ffba?sid=33b78b4f-9cd8-4b1f-bb11-107f4dc5c0de)
+
+
 ---
 
 ## 🔍 Key Features
