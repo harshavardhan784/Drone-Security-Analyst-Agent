@@ -134,6 +134,7 @@ streamlit run app.py
 ## 📝 Improvements (Planned)
 
 - Follow up question answering.
+- Scaling using GPU and fps.
 
 ---
 
