@@ -36,25 +36,22 @@ Simulated Drone Data
     ├──> Alert Engine
     ├──> ChromaDB + Sentence Transformers (Embeddings)
     └──> LangChain + RetrievalQA 
-        └──> Question Answering
+    └──> Question Answering
 ```
 
 ---
 
 ## 🧪 How It Works
 
-### Simulated Input
-```python
-frames = [
-    { "frame": 1, "description": "Blue Ford F150 at gate", "time": "12:00", "location": "gate" },
-    { "frame": 2, "description": "Person loitering at midnight", "time": "00:01", "location": "main gate" },
-]
+### Input
+- Video
 ```
 
 ### Output Examples
 - ✅ **Log**: "Blue Ford F150 spotted at gate, 12:00."
 - 🚨 **Alert**: "Person loitering at midnight near main gate!"
 - 🔍 **Query**: "Show all truck events" → Returns all relevant logs.
+- 🔍 **Query**: "Give me summary out of the video" → Returns the summary.
 
 ---
 
@@ -105,7 +102,7 @@ GEMINI_API_KEY=your_google_api_key
 Make sure to update `video_path` and sample queries in `run.py` or `streamlit_ui.py` before launching:
 
 ```bash
-streamlit run streamlit_ui.py
+streamlit run app.py
 ```
 
 ---
@@ -123,7 +120,7 @@ streamlit run streamlit_ui.py
 
 - High scalability for adding new alert rules or detection models.
 - Easy to adapt from simulated to real drone telemetry feeds.
-- Fast debugging and prototyping through modular design.
+- Fast debugging and prototyping through MODULAR design.
 
 ---
 
@@ -137,4 +134,4 @@ streamlit run streamlit_ui.py
 
 ## 📜 License
 
-This project is proprietary and shared for evaluation only.
+This project is proprietary and shared for evaluation.
