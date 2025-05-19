@@ -19,7 +19,7 @@ A functional prototype of an intelligent agent that monitors fixed property usin
 |----------------------|-------------------------------------|-------------------------------------------------|
 | 🧠 Object Detection   | [YOLOv11s](https://docs.ultralytics.com/tasks/detect/) | Real-time object detection and tracking        |
 | 🧾 Log Generation     | OpenAI GPT-4 / Gemini Pro Vision     | Convert tracked data into human-readable logs and alerts |
-| 🔎 Semantic Search    | [ChromaDB](https://www.trychroma.com/), [LangChain](https://www.langchain.com/), [all-MiniLM-L6-v2](https://www.sbert.net/) | Vector DB & contextual search |
+| 🔎 Semantic Search    | [ChromaDB](https://python.langchain.com/docs/integrations/vectorstores/chroma/), [LangChain](https://www.langchain.com/), [all-MiniLM-L6-v2](https://www.sbert.net/) | Vector DB & contextual search |
 | 🧰 Frameworks         | Python, OpenCV, Streamlit           | Frontend & backend integration                  |
 
 ---
